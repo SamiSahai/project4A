@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: lightskyblue;
+  overflow: hidden;
+  background-image: url("https://images2.alphacoders.com/800/thumb-1920-800595.jpg");
+  background-size: cover;
+
+  margin-top: 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: (-50% -50%);
+  animation: body 15s linear infinite;
+}
+@keyframes body {
+  from {
+    background-image: url("https://images2.alphacoders.com/800/thumb-1920-800595.jpg");
+  }
+  to {
+    background-image: url("https://images7.alphacoders.com/591/thumb-1920-591802.jpg");
+  }
+}
+#cloud-div {
+  animation: cloud-div 3s ease 2s infinity;
+}
+@keyframes cloud-div {
+  0% {
+    background-color: skyblue;
+  }
+  25% {
+    background-color: black;
+  }
+}
+.background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+#bird {
+  margin-top: 0;
+  max-width: 50%;
+  height: 120px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  animation: bird 15s linear infinite;
+  z-index: 2;
+  animation-timing-function: ease;
+  animation-delay: 2;
+  animation-direction: both;
+}
+@keyframes bird {
+  0% {
+    transform: translateY(300px);
+  }
+  25% {
+    transform: matrix3d(100px);
+  }
+  75% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(1500px);
+  }
+}
+#sofia {
+  margin-top: 0;
+  max-width: 100%;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: (-50% -50%);
+}
+.clouds {
+  display: flex;
+  justify-content: space-around;
+  animation: clouds 10s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes clouds {
+  100% {
+    transform: translateX(100px);
+  }
+}
+#bird1 {
+  margin-top: 0;
+  max-width: 50%;
+  height: 120px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  animation: bird1 5s linear infinite;
+  z-index: 2;
+  animation-timing-function: ease;
+  animation-delay: 2;
+  animation-fill-mode: both;
+}
+@keyframes bird1 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-1000px);
+  }
+}
