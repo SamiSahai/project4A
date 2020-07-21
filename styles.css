@@ -6,7 +6,8 @@ body {
   overflow: hidden;
   background-image: url("https://images2.alphacoders.com/800/thumb-1920-800595.jpg");
   background-size: cover;
-
+  overflow: hidden;
+  background-repeat: no-repeat;
   margin-top: 0;
   max-width: 100%;
   height: auto;
@@ -109,5 +110,23 @@ body {
   }
   to {
     transform: translateX(-1000px);
+  }
+}
+@media only screen and (max-width: 770px) {
+  body {
+    margin: 0 10%;
+  }
+  .clouds {
+    width: 100%;
+  }
+  #bird {
+    width: 100%;
+  }
+  #bird1 {
+    width: 100%;
+  }
+
+  .background {
+    width: 100%;
   }
 }
